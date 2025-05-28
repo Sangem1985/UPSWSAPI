@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.66" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2" />
+    <PackageReference Include="Npgsql" Version="9.0.3" />
+    <PackageReference Include="Scrutor" Version="6.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.1" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="BusniessLayer\Implementations\" />
+		<Folder Include="BusniessLayer\Interfaces\" />
+		<Folder Include="DataLayer\Implementations\" />
+		<Folder Include="DataLayer\Interfaces\" />
+	</ItemGroup>
+</Project>

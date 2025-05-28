@@ -1,0 +1,6 @@
+@UPSWSIntegrationINWAPIs_HostAddress = http://localhost:5276
+
+GET {{UPSWSIntegrationINWAPIs_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

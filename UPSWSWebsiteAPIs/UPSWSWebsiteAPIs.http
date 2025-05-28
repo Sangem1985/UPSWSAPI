@@ -1,0 +1,6 @@
+@UPSWSWebsiteAPIs_HostAddress = http://localhost:5008
+
+GET {{UPSWSWebsiteAPIs_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

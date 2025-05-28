@@ -1,0 +1,63 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Auth/Authenticate",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8082
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Auth/Authenticate",
+      "UpstreamHttpMethod": [ "POST" ],
+      "Parameters": []
+    },
+    {
+      "DownstreamPathTemplate": "/api/Login/GetToken",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8082
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Login/GetToken",
+      "UpstreamHttpMethod": [ "POST" ],
+      "Parameters": []
+    },
+    {
+      "DownstreamPathTemplate": "/api/Login/GetSecureData",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8082
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Login/GetSecureData",
+      "UpstreamHttpMethod": [ "GET" ],
+      "Parameters": []
+    },
+    {
+      "DownstreamPathTemplate": "/api/Login/GetSecureDataAsOutPut",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8082
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Login/GetSecureDataAsOutPut",
+      "UpstreamHttpMethod": [ "GET" ],
+      "Parameters": []
+    }
+  ],
+
+
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:8080"
+  }
+
+
+}
