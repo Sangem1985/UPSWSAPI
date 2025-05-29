@@ -51,9 +51,6 @@ namespace UPSWSWebAPIs.Controllers
 
     }
 
-
-
-
     public class MyUsers
     {
        public string? UserId { get; set; }

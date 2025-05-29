@@ -15,11 +15,4 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="BusniessLayer\Implementations\" />
-    <Folder Include="BusniessLayer\Interfaces\" />
-    <Folder Include="DataLayer\Implementations\" />
-    <Folder Include="DataLayer\Interfaces\" />
-  </ItemGroup>
-
 </Project>
