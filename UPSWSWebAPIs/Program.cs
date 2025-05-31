@@ -3,6 +3,10 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using UPSWSWebAPIs.BusniessLayer.Interfaces;
+using UPSWSWebAPIs.BAL.Implementations;
+using UPSWSWebAPIs.BAL.Interfaces;
+using UPSWSWebAPIs.DAL.Interfaces;
+using UPSWSWebAPIs.DAL.Implementations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -75,6 +79,10 @@ builder.Services.AddSwaggerGen(c =>
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddScoped<IMasterBAL, MasterBAL>();
+builder.Services.AddScoped<IMasterDAL, MasterDAL>();
+
 
 builder.Services.AddCors(optoins => optoins.AddPolicy("AllowAll", builder =>
 {
