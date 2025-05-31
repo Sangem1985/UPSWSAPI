@@ -24,33 +24,7 @@ namespace UPSWSWebAPIs.DAL.Implementations
             _Logger = Logger;
         }
         public async Task<string> GetDistricts()
-        {
-            //var conn = new NpgsqlConnection(_connString);
-            //List<District> DistrictsList = new List<District>();
-
-            //try
-            //{
-            //    await conn.OpenAsync();
-
-            //    var res = await conn.QueryAsync<District>(
-            //        MasterConstants.GetDistritcs,          
-            //        commandType: CommandType.StoredProcedure,
-            //        commandTimeout: 1200
-            //    );
-
-            //    DistrictsList = res?.ToList() ?? new List<District>();
-            //}
-            //catch (Exception ex)
-            //{
-            //    _Logger.LogError(ex, "Error fetching districts");
-            //    throw;
-            //}
-            //finally
-            //{
-            //    await conn.CloseAsync();
-            //}
-
-            //return JsonSerializer.Serialize(DistrictsList);
+        {         
             List<District> districts = new List<District>();
 
             try
