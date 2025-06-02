@@ -12,10 +12,10 @@
             public string StateId { get; set; }
             public string StateName { get; set; }
         }
-        public class District
+        public class    District
         {
-            public string DistrictId { get; set; }
-            public string DistrictName { get; set; }
+            public string districtcode { get; set; }
+            public string districtname { get; set; }
         }
         public class Mandal
         {
