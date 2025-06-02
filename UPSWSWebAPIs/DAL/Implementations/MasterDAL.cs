@@ -24,8 +24,7 @@ namespace UPSWSWebAPIs.DAL.Implementations
             _Logger = Logger;
         }
         public async Task<string> GetDistricts()
-        {
-            
+        {   
             var connection = new NpgsqlConnection(_connString);
             List<District> districts = new List<District>();
 
@@ -35,7 +34,7 @@ namespace UPSWSWebAPIs.DAL.Implementations
                 {   
                     await conn.OpenAsync();
                     var result = await connection.QueryAsync<District>(MasterConstants.GetDistritcs, commandType: CommandType.Text);
-                    districts = result?.ToList() ?? new List<District>();
+                    districts = result?.ToList() ?? new List<District>(); 
                 }
             }
             catch (Exception ex)

@@ -4,7 +4,7 @@
     {
         public class MasterConstants
         {
-            public static string GetDistritcs = "SELECT * FROM usp_get_district()";
+            public static string GetDistritcs = "SELECT * FROM usp_get_district()"; 
         }
     }
 }
